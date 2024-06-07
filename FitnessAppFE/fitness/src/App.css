@@ -27,14 +27,14 @@ body {
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
-  bottom: -20px;
-  right: 80px;
+  bottom: -50px;
+  right: 40px;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
 }
 
 .right-arrow {
-  right: 140px;
+  right: 180px;
 }
 
 .right-arrow:hover,
