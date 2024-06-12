@@ -44,8 +44,9 @@
   },
   "devDependencies": {
     "web-vitals": "^3.5.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
-  
 }
-
-
