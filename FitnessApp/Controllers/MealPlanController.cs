@@ -1,7 +1,8 @@
 ﻿using FitnessApp.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FitnessApp.Controllers
 {
@@ -9,91 +10,149 @@ namespace FitnessApp.Controllers
     [ApiController]
     public class MealPlanController : ControllerBase
     {
-        private readonly ProjectDbContext _myProjectDbContext;
-        public MealPlanController(ProjectDbContext myProjectDbContext)
+        private readonly ProjectDbContext _context;
+
+        public MealPlanController(ProjectDbContext context)
         {
-            _myProjectDbContext = myProjectDbContext;
+            _context = context;
         }
 
+        // GET: api/MealPlan
         [HttpGet]
         public async Task<IActionResult> GetAsync()
         {
+            var mealPlans = await _context.MealPlan.Include(mp => mp.User).ToListAsync();
 
-            var MealPlans = await _myProjectDbContext.MealPlan.ToListAsync();
-
-            if (MealPlans.Count == 0)
+            if (mealPlans.Count == 0)
             {
-                return NotFound("MealPlans not found");
+                return NotFound("Meal plans not found");
             }
 
-            return Ok(MealPlans);
+            return Ok(mealPlans);
         }
 
+        // GET: api/MealPlan/{id}
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetEquipmentByIdAsync(int id)
+        public async Task<IActionResult> GetMealPlanByIdAsync(int id)
         {
-            var actualTask = await _myProjectDbContext.MealPlan.AsNoTracking().Where(ats => ats.PlanID == id).FirstOrDefaultAsync();
+            var mealPlan = await _context.MealPlan.Include(mp => mp.User)
+                                        .AsNoTracking()
+                                        .FirstOrDefaultAsync(mp => mp.PlanID == id);
 
-            if (actualTask == null)
+            if (mealPlan == null)
             {
-                return NotFound("User not found");
+                return NotFound("Meal plan not found");
             }
 
-            return Ok(actualTask);
+            return Ok(mealPlan);
         }
-        [HttpPost]
-        public async Task<IActionResult> PostAsync(MealPlan MealPlan)
+
+        // GET: api/MealPlan/calories/{calories}
+        [HttpGet("calories/{calories}")]
+        public async Task<IActionResult> GetMealPlanByCalories(int calories)
         {
-            if (MealPlan == null)
+            var mealPlan = await _context.MealPlan
+                .Where(mp => mp.NrCalorii == calories)
+                .FirstOrDefaultAsync();
+
+            if (mealPlan == null)
+            {
+                return NotFound("Meal plan not found");
+            }
+
+            return Ok(mealPlan);
+        }
+
+        // POST: api/MealPlan
+        [HttpPost]
+        public async Task<IActionResult> PostAsync(MealPlan mealPlan)
+        {
+            if (mealPlan == null)
             {
                 return BadRequest("Request is incorrect");
             }
 
-            if (MealPlan.UserID <= 0)
+            if (mealPlan.UserID <= 0)
             {
                 return BadRequest("UserID is required");
             }
 
-            var user = await _myProjectDbContext.User.FindAsync(MealPlan.UserID);
+            var user = await _context.User.FindAsync(mealPlan.UserID);
             if (user == null)
             {
                 return NotFound("User not found");
             }
 
-            user.MealPlans.Add(MealPlan);
-            await _myProjectDbContext.SaveChangesAsync();
-            return Created($"/id?id={MealPlan.PlanID}", MealPlan);
+            mealPlan.User = user;
+            _context.MealPlan.Add(mealPlan);
+            await _context.SaveChangesAsync();
+            return Created($"/api/MealPlan/{mealPlan.PlanID}", mealPlan);
         }
 
-
-
+        // PUT: api/MealPlan/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAsync(int id, MealPlan actualTaskToUpdate)
+        public async Task<IActionResult> PutAsync(int id, MealPlan mealPlanToUpdate)
         {
-            var actualTask = await _myProjectDbContext.MealPlan.AsNoTracking().Where(ats => ats.PlanID == id).FirstOrDefaultAsync();
-
-            if (actualTask == null)
+            if (id != mealPlanToUpdate.PlanID)
             {
-                return NotFound();
+                return BadRequest("Meal Plan ID mismatch");
             }
-            _myProjectDbContext.MealPlan.Update(actualTaskToUpdate);
-            await _myProjectDbContext.SaveChangesAsync();
+
+            var existingMealPlan = await _context.MealPlan.AsNoTracking()
+                                                    .FirstOrDefaultAsync(mp => mp.PlanID == id);
+            if (existingMealPlan == null)
+            {
+                return NotFound("Meal plan not found");
+            }
+
+            if (mealPlanToUpdate.UserID != existingMealPlan.UserID)
+            {
+                var user = await _context.User.FindAsync(mealPlanToUpdate.UserID);
+                if (user == null)
+                {
+                    return NotFound("User not found");
+                }
+                mealPlanToUpdate.User = user;
+            }
+            else
+            {
+                mealPlanToUpdate.User = existingMealPlan.User;
+            }
+
+            _context.Entry(mealPlanToUpdate).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
+        // DELETE: api/MealPlan/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var actualTask = await _myProjectDbContext.MealPlan.FindAsync(id);
-            if (actualTask == null)
+            var mealPlan = await _context.MealPlan.FindAsync(id);
+            if (mealPlan == null)
             {
-                return NotFound();
+                return NotFound("Meal plan not found");
             }
-            _myProjectDbContext.MealPlan.Remove(actualTask);
-            await _myProjectDbContext.SaveChangesAsync();
+
+            _context.MealPlan.Remove(mealPlan);
+            await _context.SaveChangesAsync();
             return NoContent();
+        }
+        // GET: api/MealPlan/user/{userId}
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetMealPlansByUserId(int userId)
+        {
+            var mealPlans = await _context.MealPlan
+                                          .Where(mp => mp.UserID == userId)
+                                          .ToListAsync();
+
+            if (mealPlans == null || mealPlans.Count == 0)
+            {
+                return NotFound("Meal plans not found for the user");
+            }
+
+            return Ok(mealPlans);
         }
 
     }
 }
-

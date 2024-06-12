@@ -1,7 +1,8 @@
 ﻿using FitnessApp.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FitnessApp.Controllers
 {
@@ -10,79 +11,107 @@ namespace FitnessApp.Controllers
     public class UserController : ControllerBase
     {
         private readonly ProjectDbContext _myProjectDbContext;
-        private object _context;
 
         public UserController(ProjectDbContext myProjectDbContext)
         {
             _myProjectDbContext = myProjectDbContext;
         }
 
+        // GET: api/user
         [HttpGet]
         public async Task<IActionResult> GetAsync()
         {
-
             var users = await _myProjectDbContext.User.ToListAsync();
 
             if (users.Count == 0)
             {
-                return NotFound("User not found");
+                return NotFound("Users not found");
             }
 
             return Ok(users);
         }
 
-         [HttpGet("{id}")]
-        public async Task<IActionResult> GetEquipmentByIdAsync(int id)
+        // GET: api/user/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUserByIdAsync(int id)
         {
-            var actualTask = await _myProjectDbContext.User.AsNoTracking().Where(ats => ats.UserID == id).FirstOrDefaultAsync();
+            var user = await _myProjectDbContext.User.AsNoTracking().FirstOrDefaultAsync(u => u.UserID == id);
 
-            if (actualTask == null)
+            if (user == null)
             {
                 return NotFound("User not found");
             }
 
-            return Ok(actualTask);
+            return Ok(user);
         }
-        [HttpPost]
-        public async Task<IActionResult> PostAsync(User user)
+        // POST: api/user/signup
+        [HttpPost("signup")]
+        public async Task<IActionResult> SignUp([FromBody] User user)
         {
-            if (user == null)
+            var existingUser = await _myProjectDbContext.User.FirstOrDefaultAsync(u => u.Username == user.Username);
+
+            if (existingUser != null)
             {
-                return BadRequest("Request is incorrect");
+                return Conflict("Username already exists");
             }
+
             _myProjectDbContext.User.Add(user);
             await _myProjectDbContext.SaveChangesAsync();
-            return Created($"/id?id={user.UserID}", user);
+            return CreatedAtAction(nameof(GetUserByIdAsync), new { id = user.UserID }, user);
+        }
+        // POST: api/user/signin
+        [HttpPost("signin")]
+        public async Task<IActionResult> SignIn([FromBody] UserLogin userLogin)
+        {
+            var user = await _myProjectDbContext.User.FirstOrDefaultAsync(u => u.Username == userLogin.Username && u.Password == userLogin.Password);
+
+            if (user == null)
+            {
+                return Unauthorized("Invalid username or password");
+            }
+
+            return Ok(user);
         }
 
-
-
+        // PUT: api/user/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAsync(int id, User actualTaskToUpdate)
+        public async Task<IActionResult> PutAsync(int id, User userToUpdate)
         {
-            var actualTask = await _myProjectDbContext.User.AsNoTracking().Where(ats => ats.UserID == id).FirstOrDefaultAsync();
-
-            if (actualTask == null)
+            if (id != userToUpdate.UserID)
             {
-                return NotFound();
+                return BadRequest("User ID mismatch");
             }
-            _myProjectDbContext.User.Update(actualTaskToUpdate);
+
+            var existingUser = await _myProjectDbContext.User.AsNoTracking().FirstOrDefaultAsync(u => u.UserID == id);
+            if (existingUser == null)
+            {
+                return NotFound("User not found");
+            }
+
+            _myProjectDbContext.Entry(userToUpdate).State = EntityState.Modified;
             await _myProjectDbContext.SaveChangesAsync();
             return NoContent();
         }
 
+        // DELETE: api/user/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var actualTask = await _myProjectDbContext.User.FindAsync(id);
-            if (actualTask == null)
+            var user = await _myProjectDbContext.User.FindAsync(id);
+            if (user == null)
             {
-                return NotFound();
+                return NotFound("User not found");
             }
-            _myProjectDbContext.User.Remove(actualTask);
+
+            _myProjectDbContext.User.Remove(user);
             await _myProjectDbContext.SaveChangesAsync();
             return NoContent();
-        } 
+        }
+    }
 
+    public class UserLogin
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

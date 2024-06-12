@@ -10,6 +10,75 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitnessApp.Controllers.AchievementsController",
+    "Method": "PostAsync",
+    "RelativePath": "api/Achievements",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "achievement",
+        "Type": "FitnessApp.Models.Achievements",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.AchievementsController",
+    "Method": "GetAchievementByIdAsync",
+    "RelativePath": "api/Achievements/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.AchievementsController",
+    "Method": "PutAsync",
+    "RelativePath": "api/Achievements/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "achievementToUpdate",
+        "Type": "FitnessApp.Models.Achievements",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.AchievementsController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Achievements/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitnessApp.Controllers.ExercicesController",
     "Method": "GetAsync",
     "RelativePath": "api/Exercices",
@@ -20,6 +89,75 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitnessApp.Controllers.ExercicesController",
+    "Method": "PostAsync",
+    "RelativePath": "api/Exercices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exercice",
+        "Type": "FitnessApp.Models.Exercices",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExercicesController",
+    "Method": "GetExerciceByIdAsync",
+    "RelativePath": "api/Exercices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExercicesController",
+    "Method": "PutAsync",
+    "RelativePath": "api/Exercices/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exerciceToUpdate",
+        "Type": "FitnessApp.Models.Exercices",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExercicesController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Exercices/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitnessApp.Controllers.ExerciseTrainingController",
     "Method": "GetAsync",
     "RelativePath": "api/ExerciseTraining",
@@ -27,6 +165,75 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExerciseTrainingController",
+    "Method": "PostAsync",
+    "RelativePath": "api/ExerciseTraining",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exerciseTraining",
+        "Type": "FitnessApp.Models.ExerciseTraining",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExerciseTrainingController",
+    "Method": "GetExerciseTrainingByIdAsync",
+    "RelativePath": "api/ExerciseTraining/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExerciseTrainingController",
+    "Method": "PutAsync",
+    "RelativePath": "api/ExerciseTraining/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exerciseTrainingToUpdate",
+        "Type": "FitnessApp.Models.ExerciseTraining",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.ExerciseTrainingController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/ExerciseTraining/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -48,7 +255,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MealPlan",
+        "Name": "mealPlan",
         "Type": "FitnessApp.Models.MealPlan",
         "IsRequired": true
       }
@@ -57,7 +264,7 @@
   },
   {
     "ContainingType": "FitnessApp.Controllers.MealPlanController",
-    "Method": "GetEquipmentByIdAsync",
+    "Method": "GetMealPlanByIdAsync",
     "RelativePath": "api/MealPlan/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -85,7 +292,7 @@
         "IsRequired": true
       },
       {
-        "Name": "actualTaskToUpdate",
+        "Name": "mealPlanToUpdate",
         "Type": "FitnessApp.Models.MealPlan",
         "IsRequired": true
       }
@@ -102,6 +309,38 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MealPlanController",
+    "Method": "GetMealPlanByCalories",
+    "RelativePath": "api/MealPlan/calories/{calories}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calories",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MealPlanController",
+    "Method": "GetMealPlansByUserId",
+    "RelativePath": "api/MealPlan/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -119,8 +358,93 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitnessApp.Controllers.MeasurementsController",
+    "Method": "PostAsync",
+    "RelativePath": "api/Measurements",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "measurement",
+        "Type": "FitnessApp.Models.Measurements",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MeasurementsController",
+    "Method": "GetMeasurementByIdAsync",
+    "RelativePath": "api/Measurements/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MeasurementsController",
+    "Method": "PutAsync",
+    "RelativePath": "api/Measurements/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "measurementToUpdate",
+        "Type": "FitnessApp.Models.Measurements",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MeasurementsController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Measurements/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.MeasurementsController",
+    "Method": "GetMeasurementsByUserIdAsync",
+    "RelativePath": "api/Measurements/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitnessApp.Controllers.TrainingController",
-    "Method": "GetAsync",
+    "Method": "GetTrainings",
     "RelativePath": "api/Training",
     "HttpMethod": "GET",
     "IsController": true,
@@ -129,6 +453,101 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitnessApp.Controllers.TrainingController",
+    "Method": "PostTraining",
+    "RelativePath": "api/Training",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "training",
+        "Type": "Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.TrainingController",
+    "Method": "GetTrainingById",
+    "RelativePath": "api/Training/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.TrainingController",
+    "Method": "PutTraining",
+    "RelativePath": "api/Training/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "training",
+        "Type": "Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.TrainingController",
+    "Method": "DeleteTraining",
+    "RelativePath": "api/Training/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.TrainingController",
+    "Method": "GenerateTrainingPlan",
+    "RelativePath": "api/Training/generate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nivelFitness",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "scopAntrenament",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitnessApp.Controllers.UserController",
     "Method": "GetAsync",
     "RelativePath": "api/User",
@@ -140,23 +559,7 @@
   },
   {
     "ContainingType": "FitnessApp.Controllers.UserController",
-    "Method": "PostAsync",
-    "RelativePath": "api/User",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "FitnessApp.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FitnessApp.Controllers.UserController",
-    "Method": "GetEquipmentByIdAsync",
+    "Method": "GetUserByIdAsync",
     "RelativePath": "api/User/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -184,7 +587,7 @@
         "IsRequired": true
       },
       {
-        "Name": "actualTaskToUpdate",
+        "Name": "userToUpdate",
         "Type": "FitnessApp.Models.User",
         "IsRequired": true
       }
@@ -202,6 +605,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.UserController",
+    "Method": "SignIn",
+    "RelativePath": "api/User/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "FitnessApp.Controllers.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessApp.Controllers.UserController",
+    "Method": "SignUp",
+    "RelativePath": "api/User/signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "FitnessApp.Models.User",
         "IsRequired": true
       }
     ],

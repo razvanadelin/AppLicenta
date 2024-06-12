@@ -3,64 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\fitnessapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:fitnessapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\mealplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\mealplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\mealplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\mealplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\exercisetrainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\exercisetrainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\trainingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\trainingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\exercisetraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\exercisetraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\exercices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\exercices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\exercicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\exercicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\achievementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\achievementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\measurements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\measurements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|c:\\users\\the boner\\desktop\\licenta\\fitnessapp\\models\\exercisetraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA29C6E0-E8CA-40C5-BC63-0D0D8435C955}|FitnessApp.csproj|solutionrelative:models\\exercisetraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,56 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FitnessApp",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\FitnessApp.csproj",
-              "RelativeDocumentMoniker": "FitnessApp.csproj",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\FitnessApp.csproj",
-              "RelativeToolTip": "FitnessApp.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-08T12:01:57.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:59:00.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\ProjectDbContext.cs",
-              "RelativeDocumentMoniker": "ProjectDbContext.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\ProjectDbContext.cs",
-              "RelativeToolTip": "ProjectDbContext.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwDMAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:40:51.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T15:54:22.794Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -128,130 +52,101 @@
               "RelativeDocumentMoniker": "Controllers\\MealPlanController.cs",
               "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\MealPlanController.cs",
               "RelativeToolTip": "Controllers\\MealPlanController.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAiwDcAAAAAAAAA",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAswJsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:55:31.964Z",
+              "WhenOpened": "2024-06-12T15:31:19.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFQAAAAKAAAA",
+              "DocumentIndex": 2,
+              "Title": "MeasurementsController.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\MeasurementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MeasurementsController.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\MeasurementsController.cs",
+              "RelativeToolTip": "Controllers\\MeasurementsController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAYwH8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:39:48.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AchievementsController.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\AchievementsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AchievementsController.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\AchievementsController.cs",
-              "RelativeToolTip": "Controllers\\AchievementsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T12:15:03.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExerciseTrainingController.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\ExerciseTrainingController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExerciseTrainingController.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\ExerciseTrainingController.cs",
-              "RelativeToolTip": "Controllers\\ExerciseTrainingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T15:54:07.159Z"
+              "WhenOpened": "2024-06-12T15:20:07.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MealPlan.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\MealPlan.cs",
-              "RelativeDocumentMoniker": "Models\\MealPlan.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\MealPlan.cs",
-              "RelativeToolTip": "Models\\MealPlan.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Title": "TrainingRequest.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\TrainingRequest.cs",
+              "RelativeDocumentMoniker": "Models\\TrainingRequest.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\TrainingRequest.cs",
+              "RelativeToolTip": "Models\\TrainingRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:36:46.51Z"
+              "WhenOpened": "2024-06-12T12:30:51.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ExerciseTraining.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\ExerciseTraining.cs",
-              "RelativeDocumentMoniker": "Models\\ExerciseTraining.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\ExerciseTraining.cs",
-              "RelativeToolTip": "Models\\ExerciseTraining.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T12:30:19.154Z"
+              "WhenOpened": "2024-06-12T12:20:38.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Training.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Training.cs",
-              "RelativeDocumentMoniker": "Models\\Training.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Training.cs",
-              "RelativeToolTip": "Models\\Training.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:21:35.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Exercices.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Exercices.cs",
-              "RelativeDocumentMoniker": "Models\\Exercices.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Exercices.cs",
-              "RelativeToolTip": "Models\\Exercices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:28:25.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ExercicesController.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\ExercicesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExercicesController.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\ExercicesController.cs",
-              "RelativeToolTip": "Controllers\\ExercicesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:32:22.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Measurements.cs",
-              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Measurements.cs",
-              "RelativeDocumentMoniker": "Models\\Measurements.cs",
-              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Measurements.cs",
-              "RelativeToolTip": "Models\\Measurements.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:57:09.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "TrainingController.cs",
               "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\TrainingController.cs",
               "RelativeDocumentMoniker": "Controllers\\TrainingController.cs",
               "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Controllers\\TrainingController.cs",
               "RelativeToolTip": "Controllers\\TrainingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAkAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvzYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:31:33.913Z"
+              "WhenOpened": "2024-06-12T09:40:23.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Training.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Training.cs",
+              "RelativeDocumentMoniker": "Models\\Training.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Training.cs",
+              "RelativeToolTip": "Models\\Training.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:35:07.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExerciseTraining.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\ExerciseTraining.cs",
+              "RelativeDocumentMoniker": "Models\\ExerciseTraining.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\ExerciseTraining.cs",
+              "RelativeToolTip": "Models\\ExerciseTraining.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:51:04.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Exercices.cs",
+              "DocumentMoniker": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Exercices.cs",
+              "RelativeDocumentMoniker": "Models\\Exercices.cs",
+              "ToolTip": "C:\\Users\\The Boner\\Desktop\\licenta\\FitnessApp\\Models\\Exercices.cs",
+              "RelativeToolTip": "Models\\Exercices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:51:01.248Z",
+              "EditorCaption": ""
             }
           ]
         }
