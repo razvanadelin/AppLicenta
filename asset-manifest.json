@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/AppLicenta/static/css/main.82695389.css",
+    "main.js": "/AppLicenta/static/js/main.8150838d.js",
+    "static/media/banner1.jpg": "/AppLicenta/static/media/banner1.0bc5ad92b528f805705f.jpg",
+    "static/media/banner.png": "/AppLicenta/static/media/banner.ca828a848f3cbf2010bd.png",
+    "static/media/Logo.png": "/AppLicenta/static/media/Logo.78703f93952f0d513201.png",
+    "static/media/gym.png": "/AppLicenta/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/AppLicenta/index.html",
+    "main.82695389.css.map": "/AppLicenta/static/css/main.82695389.css.map",
+    "main.8150838d.js.map": "/AppLicenta/static/js/main.8150838d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82695389.css",
+    "static/js/main.8150838d.js"
+  ]
+}
